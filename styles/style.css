@@ -3,3 +3,49 @@
     margin: 0;
     box-sizing: border-box;
 }
+.flex{
+    display: flex;
+}
+.blue-dot{
+    color: #0081FF;
+    font-size:33px;
+    line-height: 33px;
+}
+.resume-template{
+    color: #B3B3B3;
+}
+.container{
+    max-width: 100%;
+    width: 1920px;
+    margin: 0 auto;
+}
+.top-section{
+    background-color: #DDDDDD;
+    padding: 3rem;
+    justify-content: space-between;
+}
+
+.noladin{
+    font-size: 158.3px;
+   
+}
+.top-section-aboutme{
+    color: #373737;
+    position: absolute;
+    font-size: 43px;
+    white-space: nowrap;
+    top:3em;
+}
+.noladin-box{
+    font-family: poppins;
+    position: relative;
+    text-align: center;
+    bottom: 4em;
+    right: 9em;
+}
+.roca-for-font{
+    font-family: poppins;
+}
+.resume-template{
+    font-family:Montserrat;
+}
