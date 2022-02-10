@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+ul,li,a{
+    text-decoration: none;
+    
+}
 .flex{
     display: flex;
 }
@@ -48,4 +52,43 @@
 }
 .resume-template{
     font-family:Montserrat;
+}
+.slaider{
+    justify-content:flex-start;
+}
+.social-icons{
+    margin-left: 4rem;
+}
+.social-icons h2, h4, img{
+    margin-top: 2rem;
+    font-family: Glacial Indifference;
+}
+.social-icons h2{
+    font-size: 71px;
+}
+.social-icons h4{
+    font-size: 23px;
+}
+.social-icons img{
+    margin-left: 1rem;
+}
+.social-icons-boxinside{
+    align-items: center;
+}
+.satisfied-clients{
+    display: flex;
+    flex-direction: column-reverse;
+    white-space: nowrap;
+    font-size: 24px;
+    font-family:Montserrat-bold;
+}
+.satisfied-clients span{
+    color: #E93656;
+}
+.pink-bar{
+    width: 340px;
+    height: 6px;
+    background-color: #E93656;
+    border-radius: 30px;
+    margin-top: 26px;
 }
