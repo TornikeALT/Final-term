@@ -18,7 +18,7 @@ ul,li,a{
 .resume-template{
     color: #B3B3B3;
 }
-.container{
+.wrapper{
     max-width: 100%;
     width: 1920px;
     margin: 0 auto;
@@ -59,7 +59,7 @@ ul,li,a{
 .social-icons{
     margin-left: 4rem;
 }
-.social-icons h2, h4, img{
+.social-icons h2, h4 {
     margin-top: 2rem;
     font-family: Glacial Indifference;
 }
@@ -110,7 +110,7 @@ ul,li,a{
 }
 @media(max-width:960px){
     .avatar{
-        max-width: 75%;
+        max-width: 80%;
         
     }
     .slider{
@@ -125,4 +125,61 @@ ul,li,a{
         margin-top: 100px;
         align-items: center;
     }
+    .top-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .noladin-box{
+        margin-left: 50%;
+    }
+    .roca-box{
+        margin-left:20%;
+    }
+}
+@media(max-width:504px){
+    .social-icons h2{
+        font-size: 31px;
+    }   
+    .social-icons h4{
+        font-size: 12px;
+    }   
+}
+.more-info-about-me p{
+    max-width: 334px;
+    min-height: 149px;
+}
+.more-info-about-me{
+    padding: 5rem;
+}
+.progress-bars{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-info{
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.my-image{
+    margin:0 80px;
+}
+.social-icons-small{
+    justify-content: space-between;
+}
+.social-icons-small-box{
+    background-color: #F9F9F9;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress-bars label{
+    margin-top: 24px;
+   font-size: 20px;
+}
+.progress-bars progress{
+    margin-bottom: 28px;
 }
