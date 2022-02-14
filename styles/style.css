@@ -166,7 +166,7 @@ ul,li,a{
     margin:0 80px;
 }
 .social-icons-small{
-    justify-content: space-between;
+    margin-top: 78px;
 }
 .social-icons-small-box{
     background-color: #F9F9F9;
@@ -175,11 +175,59 @@ ul,li,a{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 5px;
+    cursor: pointer;
 }
 .progress-bars label{
     margin-top: 24px;
-   font-size: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 .progress-bars progress{
     margin-bottom: 28px;
+    width: 300px;
+    height: 9px;
+    
+}
+ /* For Chrome or Safari */
+ progress::-webkit-progress-bar {
+    background-color: #eeeeee;
+    
+}
+
+progress::-webkit-progress-value {
+    background-color: #f1176b !important;
+    
+}
+
+
+/* For Firefox */
+progress {
+    background-color: #E93656;
+    
+}
+
+progress::-moz-progress-bar {
+    background-color: #E93656 !important;
+    
+}
+
+/* For IE10 */
+progress {
+    background-color:#E93656;
+    
+}
+
+progress {
+    background-color:#E93656;
+    
+}
+.percentage-pink{
+    color:#E93656 ;
+   
+}
+
+.dp-none{
+    display:none;
+
 }
