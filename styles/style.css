@@ -99,7 +99,7 @@ ul,li,a{
 .slider-item.active{
     display: block;
 }
-@media (max-width: 1366px) {
+@media(max-width: 1366px) {
     .slider{
         flex-direction: column;
         align-items: center;
@@ -123,6 +123,7 @@ ul,li,a{
     .social-icons-boxinside{
         justify-content: center;
     }
+    
 }
 @media(max-width:960px){
     .avatar{
@@ -161,8 +162,13 @@ ul,li,a{
     .my-image{
         max-width: 75%;
     }
-    .my-info{
+    .dynamic-contact{
+        flex-direction: column;
+    }
+    .dynamic-contact-chld{
+        flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 }
 @media(max-width:504px){
@@ -187,8 +193,8 @@ ul,li,a{
 
 .my-info{
     flex-direction: column;
-    align-items: flex-end;
     justify-content: center;
+    align-items: flex-end;
 }
 .my-info h2{
     text-align: right;
@@ -208,6 +214,7 @@ ul,li,a{
     transition: all 500ms ease; 
     font-family: Glacial Indifference;
     margin-top: 60px;
+    cursor: pointer;
 }
 button:hover{
     background:#E93656;
@@ -287,4 +294,30 @@ progress {
 .dp-none{
     display:none;
 
+}
+.dynamic-contact{
+    max-width: 1920px;
+    min-height: 210px;
+    background-color: #131A36;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.dynamic-contact-chld{
+    padding: 0 40px;
+  
+}
+.dynamic-contact-chld a{
+    margin-right: 30px;
+}
+.dynamic-contact-chld h2,p{
+    padding-bottom: 10px;
+}
+.dynamic-contact-chld a{
+    transition: all 500ms ease;
+    border-radius: 50%;
+}
+.dynamic-contact-chld a:hover{
+    background:  #E93656;
 }

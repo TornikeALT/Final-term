@@ -30,7 +30,7 @@ repeat();
 
 window.addEventListener('scroll',(e)=>{
     console.log(scrollY)
-    if(scrollY<1500){
+    if(scrollY<800){
         document.getElementById('marking').classList.add('dp-none');
         document.getElementById('Design').classList.add('dp-none');
         document.getElementById('photography').classList.add('dp-none');
