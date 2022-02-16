@@ -19,9 +19,9 @@ ul,li,a{
     color: #B3B3B3;
 }
 .wrapper{
-    max-width: 100%;
-    width: 1920px;
+    max-width: 1920px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .top-section{
     background-color: #DDDDDD;
@@ -59,7 +59,7 @@ ul,li,a{
 .social-icons{
     margin-left: 4rem;
 }
-.social-icons h2, h4 {
+.social-icons h2{
     margin-top: 2rem;
     font-family: Glacial Indifference;
 }
@@ -74,6 +74,7 @@ ul,li,a{
 }
 .social-icons-boxinside{
     align-items: center;
+    margin-top: 3rem;
 }
 .satisfied-clients{
     display: flex;
@@ -83,10 +84,10 @@ ul,li,a{
     font-family:Montserrat-bold;
 }
 .satisfied-clients span{
-    color: #E93656;
+    color: #E93656;  
 }
 .pink-bar{
-    width: 340px;
+    max-width: 300px;
     height: 6px;
     background-color: #E93656;
     border-radius: 30px;
@@ -98,14 +99,29 @@ ul,li,a{
 .slider-item.active{
     display: block;
 }
-@media (max-width: 1460px) {
+@media (max-width: 1366px) {
     .slider{
         flex-direction: column;
         align-items: center;
     }
     .satisfied-clients{
-        align-items: center;
         padding-top: 20px;
+        margin-left: 4rem;
+    }
+    .more-info-about-me{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;   
+    }
+    .my-info button{
+        margin:2rem auto;
+    }
+    .social-icons h4{
+        text-align: center;
+    }
+    .social-icons-boxinside{
+        justify-content: center;
     }
 }
 @media(max-width:960px){
@@ -136,6 +152,18 @@ ul,li,a{
     .roca-box{
         margin-left:20%;
     }
+    .more-info-about-me{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .my-image{
+        max-width: 75%;
+    }
+    .my-info{
+        align-items: center;
+    }
 }
 @media(max-width:504px){
     .social-icons h2{
@@ -162,6 +190,29 @@ ul,li,a{
     align-items: flex-end;
     justify-content: center;
 }
+.my-info h2{
+    text-align: right;
+}
+.my-info h4{
+    margin-bottom: 33px;
+    color: #DAAE19;
+}
+.my-info button{
+    width: 152px;
+    height: 50px;
+    border: none;
+    color:black;
+    padding: 10px;
+    font-size: 15px;
+    position: relative;
+    transition: all 500ms ease; 
+    font-family: Glacial Indifference;
+    margin-top: 60px;
+}
+button:hover{
+    background:#E93656;
+    color: white;
+  }
 .my-image{
     margin:0 80px;
 }
@@ -177,7 +228,13 @@ ul,li,a{
     justify-content: center;
     margin-right: 5px;
     cursor: pointer;
+    transition: all 500ms ease; 
 }
+
+.social-icons-small-box:hover{
+    background:#15263E;
+}
+
 .progress-bars label{
     margin-top: 24px;
     font-size: 20px;
@@ -185,7 +242,7 @@ ul,li,a{
 }
 .progress-bars progress{
     margin-bottom: 28px;
-    width: 300px;
+    
     height: 9px;
     
 }
