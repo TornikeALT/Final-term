@@ -30,7 +30,7 @@ repeat();
 
 window.addEventListener('scroll',(e)=>{
     console.log(scrollY)
-    if(scrollY<841){
+    if(scrollY<1500){
         console.log('Shesrulda')
         document.getElementById('marking').classList.add('dp-none');
         document.getElementById('Design').classList.add('dp-none');
