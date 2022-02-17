@@ -321,3 +321,48 @@ progress {
 .dynamic-contact-chld a:hover{
     background:  #E93656;
 }
+.service{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.service-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 285px;
+    min-height: 360px;
+    background-color:#FAFAFA;
+    justify-content: center;
+    margin:10px;
+    font-family:Glacial Indifference;
+    position: relative;
+}
+.service-box img{
+    margin-bottom: 15px;
+}
+.service-wrapper{
+    margin-top: 203px;
+}
+.service-animation{
+        padding-top: 130px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background:#15263E;
+        color: #fff;
+        visibility: hidden;
+        opacity: 98;
+        transition: opacity .2s, visibility .2s;
+      }
+.service-box:hover .service-animation{
+  visibility: visible;
+  opacity: 1;
+} 
+.service-animation h2{
+    margin-bottom: 10px;
+}
