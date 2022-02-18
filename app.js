@@ -76,3 +76,5 @@ const manualSlider=function(manual){
     });
     
 });
+
+//** **//
