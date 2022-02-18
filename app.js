@@ -52,3 +52,27 @@ window.addEventListener('scroll',(e)=>{
     }
 })
 
+//მეორე სლაიდერი
+
+const slides=document.querySelectorAll('.slides');
+const btns=document.querySelectorAll('.btn');
+let currentSlide=1;
+
+const manualSlider=function(manual){
+    slides.forEach((slide)=>{
+        slide.classList.remove('green');
+       
+        btns.forEach((btn)=>{
+            btn.classList.remove('green');
+        });
+    });
+    slides[manual].classList.add('green');
+    btns[manual].classList.add('green');
+    }    
+    btns.forEach((btn, i)=>{
+    btn.addEventListener('click', ()=>{
+        manualSlider(i);
+        currentSlide = i;
+    });
+    
+});
