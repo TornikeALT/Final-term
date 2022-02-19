@@ -5,7 +5,7 @@
 }
 ul,li,a{
     text-decoration: none;
-    
+    list-style-type: none;
 }
 .flex{
     display: flex;
@@ -177,7 +177,8 @@ ul,li,a{
     }   
     .social-icons h4{
         font-size: 12px;
-    }   
+    }  
+    
 }
 .more-info-about-me p{
     max-width: 334px;
@@ -374,6 +375,8 @@ progress {
 }
 .recomendation p{
     max-width: 497px;
+    font-family: Roboto-light;
+    color: white;
 }
 .recomendation{
     display: flex;
@@ -387,6 +390,7 @@ progress {
 }
 .recomendation img{
     margin:0 65px;
+    margin-bottom: 10px;
 }
 .recomendation-quote{
     display: flex;
@@ -394,8 +398,10 @@ progress {
     align-items:center;
     justify-content:flex-end;
 }
-.recomendation-quote h2,h4{
+.recomendation-quote h2{
     margin-top: 12px;
+    color: white;
+    font-family:Glacial Indifference;
 }
 .reccomendation-btn{
     flex-direction: column;
@@ -426,4 +432,38 @@ progress {
 .green{
     z-index: 20;
     visibility: visible;
+}
+.recomendation-quote h4{
+    color: #E93656;
+    font-family: roboto;
+}
+.dotted-image{
+    border: 3px dotted white;
+    border-radius: 50%;
+    padding: 15px;
+}
+.category-names{
+    max-width: 240px;
+    height: 401px;
+    background-color: #15263E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.latest-project-box{
+    justify-content: center;
+}
+.latest-projects-container h2{
+    text-align: center;   
+    font-size: 70px; 
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family:Glacial Indifference;
+}
+.category-names li{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    font-family:Glacial Indifference;
 }
