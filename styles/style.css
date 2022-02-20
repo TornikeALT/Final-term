@@ -123,9 +123,9 @@ ul,li,a{
     .social-icons-boxinside{
         justify-content: center;
     }
-    
 }
-@media(max-width:960px){
+
+@media (max-width:1040px){
     .avatar{
         max-width: 80%;
         
@@ -466,4 +466,93 @@ progress {
     font-size: 20px;
     color: white;
     font-family:Glacial Indifference;
+    cursor: pointer;
+}
+.category-names li:hover{
+   color: #E93656;
+}
+.category-images{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    background-color: #555555;
+    align-items: center;
+    margin-left: 30px;
+}
+.category-image-box{
+    position: relative;
+    display: none;
+}
+.category-images-text{
+    position: absolute;
+    left:40%;
+    top:50%;
+    color: white;
+    font-size: 23px;
+    font-family: Glacial Indifference;
+    text-align: center;
+}
+.category-image-heart{
+    position: absolute;
+    left:50%;
+    top:20%
+}
+.heart-icon{
+    border:2px solid #E93656;
+    padding: 10px;
+    border-radius:50%;
+}
+.category-image-box h6{
+    text-align: center;
+    font-size: 11px;
+    color: #DDDDDD;
+    margin-bottom: 7px;
+    font-family: muli;
+}
+.category-image-box >img{
+    opacity: 50%;
+}
+.category-names ul li.latest-active{
+    color: #E93656;
+}
+.show{
+    display: block;
+}
+.latest-articles{
+    margin-top: 10rem;
+}
+.latest-articles-header{
+    text-align: center;
+    margin-bottom: 8rem;
+}
+.latest-articles-header h2{
+    font-size: 70px;
+    font-family:Glacial Indifference;
+}
+.latest-articles-header h4{
+    color: #2ED279;
+    font-family:Glacial Indifference;
+}
+.black-kubik{
+    max-width: 123px;
+    background-color: #15263E;  
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    line-height: 100px;
+    text-align: center;
+}
+.article-text{
+    text-align: left;
+    padding: 7rem;
+    background-color: #FAFAFA;
+}
+.article-text p{
+    max-width: 569px;
+}
+.articles{
+    justify-content: flex-end;
+}
+.article-text h2,h4,p{
+    margin-top: 10px;
 }

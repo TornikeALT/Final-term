@@ -253,44 +253,106 @@
            <div class="flex latest-project-box">
                 <div class="category-names">
                     <ul>
-                        <li>
+                        <li onclick="filterObjects('all')">
                             All
                         </li>
-                        <li>
+                        <li onclick="filterObjects('workidea')">
                             Work ideas
                         </li>
-                        <li>
+                        <li onclick="filterObjects('mokup')">
                             Mokup
                         </li>
-                        <li>
+                        <li onclick="filterObjects('psd')">
                             PSD Design
                         </li>
-                        <li>
+                        <li onclick="filterObjects('logo')">
                             Logo
                         </li>
-                        <li>
+                        <li onclick="filterObjects('presentation')">
                             Presentation
                         </li>
-                        <li>
+                        <li onclick="filterObjects('icons')">
                             Icons
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <div>
-                        <img src="photo/category1.jpg" alt="">
-                        <img src="photo/category2.jpg" alt="">
-                        <img src="photo/category3.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="photo/category4.jpg" alt="">
-                        <img src="photo/category5.jpg" alt="">
-                        <img src="photo/category6.jpg" alt="">
+                    <div class="category-images ">
+                        <div  class="category-image-box workidea" >   
+                            <img src="photo/workidea.jpg" alt="work idea">
+                                <div class="category-image-heart">
+                                    <img class="heart-icon" src="photo/heart.svg" alt="heart icon">
+                                </div>  
+                            <span class="category-images-text">
+                                <h6>9 Month ago</h6>    Work Ideas</span>    
+                         </div>
+                         <div class="category-image-box mokup">   
+                            <img src="photo/mokup.jpg" alt="mokup">
+                                <div class="category-image-heart">
+                                    <img class="heart-icon" src="photo/heart.svg" alt="heart icon">
+                                </div>  
+                            <span class="category-images-text">
+                                <h6>1 Month ago</h6>   Mokup</span>    
+                         </div>
+                         <div class="category-image-box psd">   
+                            <img src="photo/design.jpg" alt="design">
+                                <div class="category-image-heart">
+                                    <img class="heart-icon" src="photo/heart.svg" alt="heart icon">
+                                </div>  
+                            <span class="category-images-text">
+                                <h6>2 Month ago</h6> Design</span>    
+                         </div>
+                         <div class="category-image-box logo">   
+                            <img src="photo/logoo.jpg" alt="Logo">
+                                <div class="category-image-heart">
+                                    <img class="heart-icon" src="photo/heart.svg" alt="heart icon">
+                                </div>  
+                            <span class="category-images-text">
+                                <h6>12 Month ago</h6>  Logo</span>    
+                         </div>
+                         <div class="category-image-box presentation">   
+                            <img src="photo/presentation.jpg" alt="presentation">
+                                <div class="category-image-heart">
+                                    <img class="heart-icon" src="photo/heart.svg" alt="heart icon">
+                                </div>  
+                            <span class="category-images-text">
+                                <h6>5 Month ago</h6>  Presentation</span>    
+                         </div>
+                         <div class="category-image-box icons">   
+                            <img src="photo/icon.jpg" alt="Icon">
+                                <div class="category-image-heart">
+                                    <img class="heart-icon" src="photo/heart.svg" alt="heart icon">
+                                </div>  
+                            <span class="category-images-text">
+                                <h6>6 Month ago</h6>  Icon</span>    
+                         </div>
                     </div>
                 </div>
            </div>
         </div> 
-        </div>   
+            <section class="latest-articles">
+               <div class="latest-articles-header">
+                <h4>NEWS & EVENT</h4>
+                <h2>Latest Articles</h2>
+               </div>
+                <div class="articles flex">
+                    <div class="article-text">
+                       <div>
+                        <img src="photo/Icon1.svg" alt="">
+                       </div>
+                        <h4>In freelancing Company</h4>
+                        <h2>Graphic Designer</h2>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. READ MORE</p>
+                    </div>
+                    <div class="black-kubik">
+                        <h2>2012-2014</h2>
+                    </div>
+                    <div class="article-image">
+                        <img src="photo/graphic designer.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
     <script src="app.js"></script>
 </body>
 </html>
