@@ -752,3 +752,24 @@ footer>h3{
 .white-rosa{
     color: white;
 }
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:50%;
+    left:30%;
+    visibility: hidden;
+}    
+.modal{
+    width: 600px;
+    max-width: 100%;
+    background-color:white;
+    padding: 50px;
+    border: 1px solid black ;
+}
+.close-modal{
+    width: 40px;
+}
+.modal-container.show{
+    visibility: visible;
+}

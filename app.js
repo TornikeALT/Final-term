@@ -113,3 +113,31 @@ function removeClass(element,name){
     }
     element.className=arr1.join(' ')
 }
+
+//**SUBMIT **//
+
+const myForm=document.getElementById('my-form');
+
+myForm.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+fetch('http://api.kesho.me/v1/user-test/contact',{
+
+        method:'post',
+        body:formData
+    
+    }).then(function(response){
+        return response.text();
+    }).then (function(text) {
+        console.log(text);
+    }).catch(function(error) {
+        console.error(error);
+    })
+});
+console.log(myForm)
+
+//modal
+
+
