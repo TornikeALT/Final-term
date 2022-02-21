@@ -129,7 +129,7 @@ ul,li,a{
         align-items: center;
         justify-content: center;
         width: 70%;
-        margin-left: a;
+        margin-left: auto;
 }
 
 @media (max-width:1040px){
