@@ -123,6 +123,13 @@ ul,li,a{
     .social-icons-boxinside{
         justify-content: center;
     }
+    
+    .articles{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        margin-left: a;
 }
 
 @media (max-width:1040px){
@@ -170,6 +177,21 @@ ul,li,a{
         align-items: center;
         text-align: center;
     }
+    .rosa-team-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rosa-team-logos-box{
+        margin-top: 70px;
+    }
+    .form-reg{
+        width: 70%;
+    }
+    .social-icons-footer{
+        width: 70%;
+        margin: auto;
+    }
+    }
 }
 @media(max-width:504px){
     .social-icons h2{
@@ -190,6 +212,7 @@ ul,li,a{
 .progress-bars{
     flex-direction: column;
     justify-content: center;
+    font-family:Glacial Indifference ;
 }
 
 .my-info{
@@ -317,10 +340,13 @@ progress {
 }
 .dynamic-contact-chld a{
     transition: all 500ms ease;
-    border-radius: 50%;
+    border-radius: 50px;
+    
 }
 .dynamic-contact-chld a:hover{
-    background:  #E93656;
+   background-color:  #E93656;
+   border-radius:50px;
+   margin-bottom: 20px;
 }
 .service{
     justify-content: center;
@@ -536,11 +562,14 @@ progress {
 }
 .black-kubik{
     max-width: 123px;
+    height: 637px;
     background-color: #15263E;  
     writing-mode: vertical-rl;
     text-orientation: mixed;
     line-height: 100px;
     text-align: center;
+    transform: rotate(180deg);
+    color: #E93656;
 }
 .article-text{
     text-align: left;
@@ -549,10 +578,177 @@ progress {
 }
 .article-text p{
     max-width: 569px;
+    font-family:muli;
 }
 .articles{
     justify-content: flex-end;
 }
 .article-text h2,h4,p{
     margin-top: 10px;
+}
+.minus-margin{
+    margin-right: -70px;
+}
+.article-text h2{
+    font-size: 40px;
+    font-family:Glacial Indifference ;
+}
+.article-text h4{
+    font-size: 14px;
+    color: #888888;
+    font-family: muli;
+}
+.rosa-team-logos-box{
+    position: relative;
+    
+}
+.rosa-team-logos-text{
+    position: absolute;
+    top:0;
+    left: 0;
+    text-align: center;
+    height: 190px;
+    width: 230px;
+    border: 4px solid #E93656;
+    opacity: 0;
+    transition: opacity 0.25s;
+    padding: 35px;
+    cursor: pointer;
+}
+.rosa-team-logos-text:hover{
+    opacity: 1;
+    background-color: white;
+}
+.rosa-team-header{
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+.rosa-team-container{
+    justify-content: space-evenly;
+}
+.rosa-team-logos-box img{
+    margin-left: 60px;
+}
+.rosa-team-logos-text p{
+    color: #626262;
+    font-family: roboto;
+    font-size: 13px;
+}
+.rosa-team-logos-text h2{
+    font-family: poppins;
+    font-size: 16px;
+}
+.rosa-team-header h6{
+    margin-bottom: 5px;
+    color: #2ED279;
+    font-size:14 ;
+    font-family:Glacial Indifference ;
+}
+.rosa-team-header h2{
+    font-size: 70px;
+    font-family:Glacial Indifference ;
+}
+.map{
+    margin-top: 7rem;
+    background: url('../photo/map.jpg');
+}
+
+.registration-form{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 660px;
+    flex-direction: column;  
+}    
+.form-reg{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+input{
+    width: 290px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    font-family: poppins;
+}
+.textarea{
+    margin-left: 5px;
+    text-align: left;
+    padding: 5px;
+}
+.map-container{
+    background-color: #000000;
+    opacity: 71%;
+}
+.pink-btn{
+    padding: 18px;
+    background: transparent;
+    color:red;
+    border: 2px solid red;
+    opacity: 100%;
+    margin-top: 50px;
+    width: 187px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.contact-us{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-us h2{
+    font-family: Jaapokki;
+    font-size: 45px;
+}
+.contact-us p{
+    font-family: roboto;
+    font-size: 17px;
+}
+.roca-btm{
+    text-align: center;
+    max-width: 613px;
+    margin: auto;
+    padding-top: 6rem;
+    margin-bottom: 35px;
+}
+.roca-btm>h2{
+    font-family: poppins;
+    font-size: 55px;
+    color: white;
+}
+.roca-btm>p{
+    font-family: roboto;
+    color: #A5A5A5;
+}
+.dot{
+    color: #E93656;
+    margin-left: -10px;
+}
+.roca-container{
+    background-color: #282828;
+}
+.social-icons-footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.social-icons-footer > a{
+    padding: 10px;
+}
+footer{
+    background-color: #171717;
+    height: 81px;
+}
+footer>h3{
+    color:#A0A8B7;
+    text-align: center;
+    padding-top: 30px;
+    font-family: muli;
+    font-size: 15px;
+}
+.white-rosa{
+    color: white;
 }
